@@ -159,30 +159,10 @@ header .btn {
 /* Coming Soon */
 
 /* news */
-.news {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  row-gap: 2rem;
-}
-.news h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-align: center;
-}
 .news form {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  background-color: var(--bg-color);
   border-radius: 0.5rem;
 }
 .news form input[type="email"] {
-  border: 0;
   outline: 0;
   width: 300px;
 }
@@ -192,69 +172,33 @@ header .btn {
   font-weight: 400;
 }
 .news .btn {
-  border: 0;
   outline: 0;
   cursor: pointer;
   background-color: var(--main-color);
-  color: var(--bg-color);
   padding: 0.7rem 1.4rem;
   border-radius: 0.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 .btn:hover {
   background: #fa1216;
 }
 /* news */
 /* footer */
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.footer .logo {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--bg-color);
-  display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
-}
 .logo i {
-  font-size: 24px;
   color: var(--main-color);
-}
-.social-icons {
-  display: flex;
-  align-items: center;
-  column-gap: 0.5rem;
 }
 .social-icons a {
   width: 55px;
   height: 55px;
-  border-radius: 50%;
-  font-size: 2rem;
-  text-align: center;
-  line-height: 55px;
-  background-color: var(--bg-color);
   color: var(--main-color);
   border: 4px solid rgb(2, 3, 7, 0.4);
   transition: 0.2s all linear;
 }
 .social-icons a:hover {
-  background-color: var(--main-color);
-  color: var(--bg-color);
+  background-color: var(--main-color) !important;
+  color: var(--bg-color) !important;
 }
 /* footer */
 /* copy */
-.copy {
-  text-align: center;
-  color: var(--bg-color);
-  font-size: 1.1rem;
-}
 .copy span {
   color: var(--main-color);
   cursor: pointer;
