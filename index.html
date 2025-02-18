@@ -20,32 +20,56 @@
   </head>
   <body>
     <!--Navbar  -->
-    <header>
-      <a href="#home" class="logo"> <i class="fa-solid fa-film"></i> Movies </a>
-      <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
-      <!-- menu -->
-      <ul class="navbar">
-        <li><a class="home-active" href="#home">Home</a></li>
-        <li><a href="#movies">Movies</a></li>
-        <li><a href="#coming soon">Coming Soon</a></li>
-        <li><a href="#newsletter">Newsletter</a></li>
-      </ul>
-      <a href="#" class="btn">Sign In</a>
+    <header class="w-100 py-3 position-fixed top-0 start-0">
+      <div
+        class="container d-flex justify-content-between align-items-center py-0"
+      >
+        <a href="#home" class="logo d-flex align-items-center gap-2 text-light">
+          <i class="fa-solid fa-film"></i> Movies
+        </a>
+        <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
+        <!-- menu -->
+        <ul
+          class="navbar-list gap-5 d-flex align-items-center justify-content-between mb-0"
+        >
+          <li class="position-relative">
+            <a class="home-active fs-6 p-0" href="#home">Home</a>
+          </li>
+          <li class="position-relative">
+            <a href="#movies" class="fs-6 p-0">Movies</a>
+          </li>
+          <li class="position-relative">
+            <a href="#coming soon" class="fs-6 p-0">Coming Soon</a>
+          </li>
+          <li class="position-relative">
+            <a href="#newsletter" class="fs-6 p-0">Newsletter</a>
+          </li>
+        </ul>
+        <a href="#" class="btn text-light">Sign In</a>
+      </div>
     </header>
+
     <!-- end navbar -->
     <!-- Home -->
-    <section id="home" class="home w-100 min-vh-100 position-relative">
-      <div class="home-text position-absolute">
-        <span class="text-black text-uppercase fw-medium">Marvel Universe</span>
-        <h2 class="text-white display-3 fw-bold mb-3">
-          Spider-Man<br />
-          Far From Home
-        </h2>
-        <a
-          href="#"
-          class="btn btn-danger text-light px-4 py-2 rounded fw-normal"
-          >Book Now</a
-        >
+    <section
+      id="home"
+      class="home w-100 min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <div class="home-text">
+          <span class="text-black text-uppercase fw-medium"
+            >Marvel Universe</span
+          >
+          <h2 class="text-white display-3 fw-bold mb-3">
+            Spider-Man<br />
+            Far From Home
+          </h2>
+          <a
+            href="#"
+            class="btn btn-danger text-light px-4 py-2 rounded fw-normal"
+            >Book Now</a
+          >
+        </div>
       </div>
     </section>
     <!-- Home -->
@@ -58,7 +82,7 @@
           Opening this Week
         </h2>
         <div
-          class="movies-container row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 mx-auto mt-4"
+          class="movies-container row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 mx-auto mt-4"
         >
           <!-- Box 1 -->
           <div class="box col">
@@ -259,7 +283,7 @@
     <section class="footer">
       <div class="container">
         <div
-          class="footer-content d-flex align-items-center justify-content-between"
+          class="footer-content d-flex flex-lg-row flex-column align-items-center justify-content-between gap-2"
         >
           <a
             href="index.html"
@@ -268,16 +292,25 @@
             <i class="fa-solid fa-film fs-4"></i> Movies
           </a>
           <div class="social-icons d-flex align-items-center gap-2">
-            <a href="#" class="rounded-circle fs-2 text-center bg-light">
+            <a
+              href="#"
+              class="rounded-circle fs-2 text-center bg-light d-flex justify-content-center align-items-center"
+            >
               <i class="fa-brands fa-facebook"></i
             ></a>
-            <a href="#" class="rounded-circle fs-2 text-center bg-light"
+            <a
+              href="#"
+              class="rounded-circle fs-2 text-center bg-light d-flex justify-content-center align-items-center"
               ><i class="fa-brands fa-instagram"></i
             ></a>
-            <a href="#" class="rounded-circle fs-2 text-center bg-light"
+            <a
+              href="#"
+              class="rounded-circle fs-2 text-center bg-light d-flex justify-content-center align-items-center"
               ><i class="fa-brands fa-twitter"></i
             ></a>
-            <a href="#" class="rounded-circle fs-2 text-center bg-light"
+            <a
+              href="#"
+              class="rounded-circle fs-2 text-center bg-light d-flex justify-content-center align-items-center"
               ><i class="fa-brands fa-tiktok"></i
             ></a>
           </div>
@@ -290,8 +323,8 @@
       <p class="m-0">&#169; <span>Web Masters</span> All Right Reserved.</p>
     </div>
     <!-- copyrights -->
-    <script src="js/main.js"></script>
     <!-- Bootstrap -->
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -4,41 +4,34 @@
 
 // landingPage.style.backgroundImage = 'url("img/home1.jpg)';
 
-
 // let randomNumber = Math.floor(Math.random() * imageArray.length );
 
-
 // let randomOption = true;
-
 
 // function randomizeImgs(){
 //   if( randomOption === true){
 //     setInterval(() => {
 
 //       let randomNumber = Math.floor(Math.random() * imageArray.length );
-    
+
 //       landingPage.style.backgroundImage = 'url("img/'+  imageArray[randomNumber] +'")';
-    
+
 //     }, 4000);
-    
+
 //   }
 // }
 // randomizeImgs();
 
 let header = document.querySelector("header");
 let menuIcon = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
-
-
-
+let navbar = document.querySelector(".navbar-list");
 
 menuIcon.onclick = () => {
   navbar.classList.toggle("active");
-}
+};
 window.onscroll = () => {
   navbar.classList.remove("active");
-}
-window.addEventListener('scroll', () => {
-    header.classList.toggle("shadow" , window.scrollY > 0);
+};
+window.addEventListener("scroll", () => {
+  header.classList.toggle("shadow", window.scrollY > 0);
 });
-
